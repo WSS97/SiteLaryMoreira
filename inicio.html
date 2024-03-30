@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <title>Lary Moreira Nails</title>
+</head>
+<body class="inicio">
+    <header>
+        <div><a href="#" id="inicio">Inicio</a><a href="cursos.html" id="cursos">Curso(s)</a><a href="contato.html" id="contato">Contato</a></div>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="title">
+                <img src="images/foto lm nail.png" alt="">
+                <div id="title">
+                    <h1>Gel na tips com maestria</h1>
+                    <h2>Instrutora: Lary Moreira</h2>
+                </div>
+        </div>
+            <div>   </div>
+        </section>
+        <section id="apresentation">
+            <div class="carousel">
+                <img src="images/1e157b5a-6e8e-41b7-9417-6dd8b738e7e9.jpeg" alt="">
+                <img src="images/2ebabf5c-0883-4b1e-ada2-39a9aa130f9f.jpeg" alt="">
+                <img src="images/7e9a61c4-3c28-415e-833f-17d7ef86f1a8.jpeg" alt="">
+                <img src="images/43e63427-7dc8-4e35-b022-3786b6f82971.jpeg" alt="">
+                <img src="images/9707056c-9fb3-4132-b851-ea7f8efb20cc (1).jpeg" alt="">
+                <img src="images/a9e27bf9-160e-431c-bd92-6142d43c612b.jpeg" alt="">
+                <img src="images/a74152c3-e520-4718-b6d0-4bb14f32be06.jpeg" alt="">
+                <img src="images/b3d55cc3-19fe-4472-821e-f98f8c94ee24.jpeg" alt="">
+                <img src="images/b663e3ac-8934-4f67-8398-cf52e4761cb5.jpeg" alt="">
+                <img src="images/d5525395-a465-4bda-8a9a-d4418bc3b510.jpeg" alt="">
+                <img src="images/e802b57e-f09c-4cdf-b1ba-41f6af194025.jpeg" alt="">
+                <img src="images/f00808ca-86ab-4246-930c-66974f79f4a2.jpeg" alt="">
+            </div>
+            "Lary Moreira iniciei minha jornada aos 12 anos de idade como manicure tradicional, oferecendo serviços personalizados diretamente na casa de cada cliente. Aos 21 anos, decidi expandir meus horizontes e aprimorar minhas habilidades ao ingressar em meu primeiro curso de Alongamento de Unhas.
+
+Com dedicação e paixão pelo meu ofício, me especializei em alongamentos em gel e fibra de vidro. Agora, estou pronta para compartilhar todo o conhecimento adquirido ao longo da minha jornada. Em meu curso, você terá acesso às técnicas e dicas exclusivas que me ajudaram a me destacar no mercado.
+
+Com a minha orientação, você não só se desenvolverá profissionalmente e financeiramente, mas também alcançará um nível de excelência em seus resultados. Prepare-se para dominar a arte do alongamento de Unhas  com Maestria !”
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+        <div></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+         $(document).ready(function() {
+            $('.carousel').slick({
+                slidesToShow: 3,
+                centerMode: true,
+                focusOnSelect: true,
+                infinite: true,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+            // Mantém a imagem do meio sempre em evidência
+            $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                $('.carousel img').removeClass('active');
+                $('.carousel img[data-slick-index="' + nextSlide + '"]').addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

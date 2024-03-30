@@ -1,0 +1,91 @@
+@media screen and (min-width: 0px) and (max-width: 500px){
+    
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        box-sizing: border-box;
+        font-size: 30px;
+        min-width: 300px;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    header{
+        background: rgb(159,43,252);
+        font-family: "Edu NSW ACT Foundation", cursive;
+        padding-top: 2px;
+        margin: 0;
+    }
+
+    header a{
+        padding: 1em;
+        text-decoration: none;
+        color: black;
+        font-size: 0.6em;
+    }
+
+    .inicio header a#inicio,
+    .cursos header a#cursos,
+    .contato header a#contato{
+        color: white;
+        font-weight: 1000;
+        font-style: italic;
+    }
+
+    a:hover{
+        font-size: .8em;
+    }
+
+    section#intro{
+        background-image: linear-gradient(rgb(159,43,252),rgb(235,212,254));
+        margin: 0;
+    }
+
+    div.title{
+        display: flex;
+        font-family: "Great Vibes", cursive;
+    }
+
+    div#title{
+        padding-right: 50px;
+    }
+
+    .title img{
+        padding-top: 2em;
+        height: 30%; /*30%*/
+        max-height: 300px;
+    }
+
+    h1{
+        font-weight: 500;
+        color: white;
+        font-size: 1.8em;
+        padding-right: 5px;
+    }
+
+    h2{
+        font-size: 0.7em;
+    }
+
+    .carousel{
+        display: flex-box;
+        justify-content: center;
+        align-items: center;
+        max-width: 385px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .carousel img{
+        transition: transform 0.5s ease;
+    }
+
+    .carousel img.active{
+        transform: scale(1.2);
+        z-index: 1;
+    }
+}
